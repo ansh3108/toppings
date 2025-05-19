@@ -10,6 +10,7 @@ body {
   background: linear-gradient(to right, #3a86ff, #00b4d8);
   transition: background 0.5s ease;
   min-height: 100vh;
+  line-height: 1.6;
 }
 
 .container {
@@ -18,9 +19,36 @@ body {
   padding: 2rem;
 }
 
-h1 {
+header {
+  background: #00000033;
+  padding: 1rem 0;
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: #ffffff22;
+}
+
+h1, h2 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .mood-buttons {
@@ -75,6 +103,33 @@ h1 {
   text-align: center;
   font-size: 1.1rem;
   backdrop-filter: blur(4px);
+  transition: transform 0.3s;
+}
+
+.mood-card:hover {
+  transform: scale(1.05);
+}
+
+#about, #quote {
+  margin-top: 4rem;
+  background: #ffffff11;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+#about p, blockquote {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background: #00000033;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 768px) {

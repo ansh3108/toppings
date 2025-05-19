@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MoodBoardify</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>MoodBoardify 💫</h1>
+  <header>
+    <div class="container">
+      <h1>MoodBoardify 💫</h1>
+      <nav>
+        <a href="#moods">Moods</a>
+        <a href="#about">About</a>
+        <a href="#quote">Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="moods" class="container">
     <div class="mood-buttons">
       <button data-mood="chill">Chill 🧊</button>
       <button data-mood="hype">Hype 🔥</button>
       <button data-mood="sad">Sad 😢</button>
     </div>
-
     <div class="emoji-animation">✨</div>
-
     <div class="mood-grid">
       <div class="mood-card">Peaceful lake</div>
       <div class="mood-card">Lo-fi Vibes</div>
@@ -25,8 +33,25 @@
       <div class="mood-card">Late Night Feels</div>
       <div class="mood-card">Sunset Drive</div>
     </div>
-  </div>
+  </section>
+
+  <section id="about" class="container">
+    <h2>About</h2>
+    <p>MoodBoardify is your little space on the web to match your vibe. Whether you're feeling chill, hype, or down, we got a background for that.</p>
+  </section>
+
+  <section id="quote" class="container">
+    <h2>Quote of the Day</h2>
+    <blockquote>“Your vibe attracts your tribe.”</blockquote>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Made with vibes by MoodBoardify © 2025</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
