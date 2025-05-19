@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background: linear-gradient(to right, #3a86ff, #00b4d8);
+  transition: background 0.5s ease;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.mood-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.mood-buttons button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffffff22;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.mood-buttons button:hover {
+  background-color: #ffffff44;
+}
+
+.emoji-animation {
+  font-size: 2rem;
+  animation: float 2s ease-in-out infinite;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.mood-card {
+  background-color: #ffffff22;
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  backdrop-filter: blur(4px);
+}
+
+@media screen and (max-width: 768px) {
+  .mood-grid {
+    grid-template-columns: 1fr;
+  }
+}
