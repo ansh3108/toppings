@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MoodBoardify</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodBoardify Vibes Deluxe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container header-container">
       <h1>MoodBoardify 💫</h1>
       <nav>
         <a href="#moods">Moods</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#features">Features</a>
         <a href="#about">About</a>
         <a href="#quote">Quote</a>
       </nav>
     </div>
   </header>
 
-  <section id="moods" class="container">
+  <section id="moods" class="container section-moods">
     <div class="mood-buttons">
       <button data-mood="chill">Chill 🧊</button>
       <button data-mood="hype">Hype 🔥</button>
@@ -35,18 +37,51 @@
     </div>
   </section>
 
-  <section id="about" class="container">
-    <h2>About</h2>
-    <p>MoodBoardify is your little space on the web to match your vibe. Whether you're feeling chill, hype, or down, we got a background for that.</p>
+  <section id="features" class="container section-features">
+    <h2>Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Custom Backgrounds</h3>
+        <p>Change the vibe with one click.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Responsive Design</h3>
+        <p>Looks awesome on any device.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Animated Emojis</h3>
+        <p>Add a little magic to your day.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Grid Layouts</h3>
+        <p>Organized and aesthetic mood boards.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Gradient Backgrounds</h3>
+        <p>Colors that flow like your feels.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Flexible Containers</h3>
+        <p>Adapts to your screen perfectly.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="quote" class="container">
+  <section id="about" class="container section-about">
+    <h2>About</h2>
+    <p>
+      MoodBoardify is your little space on the web to match your vibe. Whether you're feeling chill, hype, or down, we got a background for that.
+      Our goal is to create a chill zone where vibes are everything and your mood is the moodboard.
+    </p>
+  </section>
+
+  <section id="quote" class="container section-quote">
     <h2>Quote of the Day</h2>
     <blockquote>“Your vibe attracts your tribe.”</blockquote>
   </section>
 
   <footer>
-    <div class="container">
+    <div class="container footer-container">
       <p>Made with vibes by MoodBoardify © 2025</p>
     </div>
   </footer>
@@ -54,4 +89,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
